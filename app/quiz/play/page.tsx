@@ -99,7 +99,7 @@ export default function QuizPlayPage() {
             tabIndex={-1}
             className="flex-center flex-col"
             style={{
-                minHeight: '100vh', background: 'var(--bg-secondary)', padding: '1.5rem',
+                height: '100vh', background: 'var(--bg-secondary)', padding: '1rem',
                 position: 'relative', overflow: 'hidden', outline: 'none'
             }}
         >
@@ -217,18 +217,18 @@ export default function QuizPlayPage() {
                         exit={{ opacity: 0, x: -20 }}
                         transition={{ duration: 0.3 }}
                         className="glass-card"
-                        style={{ padding: '2.5rem', textAlign: 'center', willChange: 'transform, opacity' }}
+                        style={{ padding: '1rem', textAlign: 'center', willChange: 'transform, opacity' }}
                     >
                         <span className={cn(
                             "badge",
                             currentQuestion.level === 'N1' && "badge-n1",
                             currentQuestion.level === 'N2' && "badge-n2",
                             currentQuestion.level === 'N3' && "badge-n3",
-                        )} style={{ marginBottom: '1.5rem' }}>
+                        )} style={{ marginBottom: '0.5rem' }}>
                             {currentQuestion.level}
                         </span>
 
-                        <h2 style={{ fontSize: '4rem', fontWeight: 900, marginBottom: '2rem', fontFamily: 'var(--font-mono)' }}>
+                        <h2 style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '1rem', fontFamily: 'var(--font-mono)' }}>
                             {currentQuestion.kanji}
                         </h2>
 

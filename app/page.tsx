@@ -11,7 +11,7 @@ export default function Home() {
   const t = translations[language].home;
 
   return (
-    <main className="flex-center flex-col" style={{ minHeight: '100vh', padding: '6rem 1.5rem', position: 'relative', overflow: 'hidden', background: 'var(--bg-secondary)' }}>
+    <main className="flex-center flex-col" style={{ minHeight: '100vh', padding: '1rem', position: 'relative', overflow: 'hidden', background: 'var(--bg-secondary)' }}>
       {/* Language Switcher */}
       <button
         onClick={toggleLanguage}

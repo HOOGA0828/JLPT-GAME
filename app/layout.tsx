@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "JLPT-GAME",
   description: "Zen-Modern Kanji Mastery",
   icons: {
-    icon: '/icon.svg',
+    icon: (process.env.NEXT_PUBLIC_BASE_PATH || '') + '/icon.svg',
   }
 };
 

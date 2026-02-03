@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "eslint",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d out",
+    "deploy": "gh-pages -d out -t",
     "generate-data": "tsx scripts/generate-questions.ts",
     "fix-data": "tsx scripts/fix-distractors.ts",
     "check-data": "tsx scripts/check-distractors.ts",

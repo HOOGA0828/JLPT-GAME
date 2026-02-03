@@ -41,7 +41,8 @@ export async function generateDistractors(current: VocabItem, allItems: VocabIte
 // Static JSON version
 export async function fetchQuestions(level: string): Promise<QuizQuestion[]> {
     try {
-        const response = await fetch(`/data/${level}-questions.json`);
+        const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+        const response = await fetch(`${basePath}/data/${level}-questions.json`);
         if (!response.ok) {
             // Fallback for demo if users haven't run the script yet
             console.warn("Static JSON not found, falling back to basic flow or error.");

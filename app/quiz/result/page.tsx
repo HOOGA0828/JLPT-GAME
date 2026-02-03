@@ -52,19 +52,22 @@ export default function QuizResultPage() {
                                 borderRadius: 'var(--radius-lg)'
                             }}
                         >
-                            {/* Kanji Display - No Box, just Text */}
+                            {/* Kanji Display - 50% Width */}
                             <div className="text-kanji-responsive" style={{
+                                flex: 1, width: '50%',
                                 fontWeight: 900,
                                 fontFamily: 'var(--font-mono)', lineHeight: 1.2,
-                                minWidth: '4.5rem', textAlign: 'center',
+                                textAlign: 'center',
                                 borderRight: `2px solid ${ans.isCorrect ? 'rgba(34, 197, 94, 0.2)' : 'rgba(239, 68, 68, 0.2)'}`,
                                 paddingRight: '1rem', marginRight: '1rem',
-                                color: 'var(--text-primary)'
+                                color: 'var(--text-primary)',
+                                display: 'flex', alignItems: 'center', justifyContent: 'center'
                             }}>
                                 {ans.question.kanji}
                             </div>
 
-                            <div style={{ flex: 1, minWidth: 0, textAlign: 'left' }}>
+                            {/* Details - 50% Width */}
+                            <div style={{ flex: 1, width: '50%', minWidth: 0, textAlign: 'left' }}>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.25rem' }}>
                                     <span style={{ fontWeight: 700, fontSize: '1.25rem', color: 'var(--text-primary)' }}>{ans.question.reading}</span>
                                     {ans.isCorrect ?
