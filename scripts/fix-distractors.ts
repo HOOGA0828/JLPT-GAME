@@ -54,9 +54,19 @@ async function processLevel(level: string) {
         // condition 4: duplicate distractors (within themselves)
         const hasDuplicateDistractors = new Set(item.distractors).size !== item.distractors.length;
 
-        return hasPlaceholder || hasDuplicateReading || hasInsufficient || hasDuplicateDistractors;
+        // condition 5: Kanji in distractors
+        const kanjiRegex = /[\u4e00-\u9faf]/;
+        const hasKanji = item.distractors.some((d: string) => kanjiRegex.test(d));
+
+        return hasPlaceholder || hasDuplicateReading || hasInsufficient || hasDuplicateDistractors || hasKanji;
     });
 
+    console.log(`Found ${invalidItems.length} invalid items in ${level}.`);
+
+    if (invalidItems.length === 0) {
+        console.log(`No fix needed for ${level}.`);
+        return;
+    }
 
     // Process in batches
     const BATCH_SIZE = 5;
@@ -73,15 +83,16 @@ async function processLevel(level: string) {
                     {
                         role: "system",
                         content: `You are a Japanese language teacher correcting a quiz database.
-                        The provided items have invalid, placeholder, or DUPLICATE distractors.
+                        The provided items have invalid, placeholder, DUPLICATE, or KANJI-CONTAINING distractors.
                         Generate 3 NEW, VALID, UNIQUE distractor readings for each item.
                         
                         CRITICAL RULES:
                         1. Distractors must look/sound similar to the correct reading.
                         2. Distractors must NOT be the same as the correct reading.
-                        3. Return a valid JSON object with a strict structure.
+                        3. Distractors must be written in HIRAGANA or KATAKANA only. NO KANJI allowed.
+                        4. Return a valid JSON object with a strict structure.
                         
-                        Example Input: [{"kanji": "重力", "reading": "じゅうりょく", "distractors": ["じゅうりょう", "じゅうりょく", "じゅうろく"]}]
+                        Example Input: [{"kanji": "重力", "reading": "じゅうりょく", "distractors": ["じゅうりょう", "ちょうりょく", "重力"]}]
                         Example Output: { "items": [{ "kanji": "重力", "reading": "じゅうりょく", "distractors": ["じゅうりょう", "ちょうりょく", "じゅうろく"] }] }`
                     },
                     {
@@ -120,7 +131,9 @@ async function processLevel(level: string) {
                             } else {
                                 console.warn(`[SKIPPED] ${fixed.kanji}: New distractors same as old (AI returned duplicate?). Force fixing.`);
                                 // Force fix if AI returns same/invalid
-                                data[originalIndex].distractors = ["選項A", "選項B", "選項C"]; // Temporary placeholder, user can re-run fix or we can retry logic
+                                // Force fix if AI returns same/invalid
+                                data[originalIndex].distractors = ["fix_me_1", "fix_me_2", "fix_me_3"]; // Temporary placeholder, user can re-run fix or we can retry logic
+                                console.log(`[FORCE FIXED] ${fixed.kanji}: Forced to placeholders.`);
                                 console.log(`[FORCE FIXED] ${fixed.kanji}: Forced to placeholders.`);
                             }
                         } else {
