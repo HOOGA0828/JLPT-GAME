@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   description: "Zen-Modern Kanji Mastery",
   icons: {
     icon: (process.env.NEXT_PUBLIC_BASE_PATH || '') + '/icon.svg',
+    shortcut: (process.env.NEXT_PUBLIC_BASE_PATH || '') + '/favicon.ico',
   }
 };
 
