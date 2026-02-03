@@ -45,6 +45,13 @@ async function checkLevel(level: string, reportVal: any) {
             reportVal.kanjiIssues++;
             reportVal.details.push(`[ISSUE-KANJI] [${level}] Kanji detected in distractors for: ${item.kanji}, Distractors: ${JSON.stringify(distractors)}`);
         }
+
+        // Check 3: invalid_fix or fix_me placeholders
+        const hasBadPlaceholder = distractors.some((d: string) => d.includes('invalid_fix') || d.includes('fix_me'));
+        if (hasBadPlaceholder) {
+            reportVal.kanjiIssues++; // Count as general issue for now
+            reportVal.details.push(`[ISSUE-PLACEHOLDER] [${level}] Bad placeholder detected for: ${item.kanji}, Distractors: ${JSON.stringify(distractors)}`);
+        }
     });
 }
 

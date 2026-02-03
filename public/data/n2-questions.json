@@ -9268,9 +9268,9 @@
     "kanji": "洒落",
     "reading": "しゃれ",
     "distractors": [
-      "さら",
-      "しゅれ",
-      "invalid_fix_2"
+      "さらえ",
+      "しられ",
+      "しゃれい"
     ],
     "meaning_zh": "瀟灑",
     "game_enabled": true

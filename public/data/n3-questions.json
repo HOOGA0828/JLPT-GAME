@@ -12821,9 +12821,9 @@
     "kanji": "ラケット",
     "reading": "ラケット",
     "distractors": [
-      "ラキット",
-      "ラケッド",
-      "invalid_fix_2"
+      "ラケットゥ",
+      "ラキッタ",
+      "ラクット"
     ],
     "meaning_zh": "球拍",
     "game_enabled": false
