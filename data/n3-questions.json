@@ -5740,9 +5740,9 @@
     "reading": "おとこのひと",
     "meaning": "man",
     "distractors": [
-      "おとこのびと",
-      "おとなのひと",
-      "おとこの方"
+      "おとこのへと",
+      "おとこのこと",
+      "おとこびと"
     ],
     "meaning_zh": "男人",
     "game_enabled": true
@@ -8036,9 +8036,9 @@
     "kanji": "基本",
     "reading": "きほん",
     "distractors": [
-      "きほんえ",
-      "きほんと",
-      "invalid_fix_2"
+      "きほんに",
+      "きほんお",
+      "きほんも"
     ],
     "meaning_zh": "基本",
     "game_enabled": true
@@ -12821,8 +12821,8 @@
     "kanji": "ラケット",
     "reading": "ラケット",
     "distractors": [
-      "ラクット",
-      "ラッケット",
+      "ラキット",
+      "ラケッド",
       "invalid_fix_2"
     ],
     "meaning_zh": "球拍",
@@ -23008,9 +23008,9 @@
     "kanji": "デザイン",
     "reading": "デザイン",
     "distractors": [
-      "選項A",
-      "選項B",
-      "選項C"
+      "テザイン",
+      "デサイン",
+      "デザインン"
     ],
     "meaning_zh": "設計",
     "game_enabled": false

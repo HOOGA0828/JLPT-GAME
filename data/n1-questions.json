@@ -2859,9 +2859,9 @@
     "kanji": "ゲスト",
     "reading": "ゲスト",
     "distractors": [
-      "ゲストゥ",
-      "ゲス卜",
-      "ゲストス"
+      "ゲスツ",
+      "ゲステ",
+      "ゲソト"
     ],
     "meaning_zh": "賓客",
     "game_enabled": false
@@ -4146,9 +4146,9 @@
     "kanji": "取扱",
     "reading": "とりあつかい",
     "distractors": [
-      "とりつかい",
-      "とり扱い",
-      "とりあつかいね"
+      "とりあつかえ",
+      "とりあつけい",
+      "とりかつあい"
     ],
     "meaning_zh": "處理",
     "game_enabled": true
@@ -4300,9 +4300,9 @@
     "kanji": "取り混ぜる",
     "reading": "とりまぜる",
     "distractors": [
-      "とりまぜろ",
-      "とりぜ混ぜる",
-      "とりまぜれ"
+      "とりもぜる",
+      "とれまぜる",
+      "とりませる"
     ],
     "meaning_zh": "混合",
     "game_enabled": true
@@ -6434,9 +6434,9 @@
     "kanji": "印鑑",
     "reading": "いんかん",
     "distractors": [
-      "インカン",
-      "いんがん",
-      "イン缶"
+      "いんかんに",
+      "いんこん",
+      "いんけん"
     ],
     "meaning_zh": "印鑑",
     "game_enabled": true
@@ -8587,9 +8587,9 @@
     "kanji": "ガイドブック",
     "reading": "ガイドブック",
     "distractors": [
-      "ガイドブックス",
-      "ガイドブックス",
-      "ガイドブックリ"
+      "ガイトブック",
+      "ガイドブッカ",
+      "ガイドボック"
     ],
     "meaning_zh": "指南書",
     "game_enabled": false
@@ -9412,9 +9412,9 @@
     "kanji": "勝手",
     "reading": "かって",
     "distractors": [
-      "かっ手",
-      "かってん",
-      "かってみ"
+      "かて",
+      "かっけ",
+      "かいって"
     ],
     "meaning_zh": "任意",
     "game_enabled": true
@@ -13436,9 +13436,9 @@
     "kanji": "あせる (こえが～)",
     "reading": "あせる (こえが～)",
     "distractors": [
-      "あせろ (こえが～)",
-      "あせれ (こえが～)",
-      "あせる声が～"
+      "あらせる (こえが～)",
+      "あせられ (こえが～)",
+      "あける (こえが～)"
     ],
     "meaning_zh": "聲音顫抖",
     "game_enabled": false
@@ -13843,9 +13843,9 @@
     "kanji": "アラブ",
     "reading": "アラブ",
     "distractors": [
-      "アラブ人",
-      "アラビア語",
-      "アラブー"
+      "アラック",
+      "アレブ",
+      "アラム"
     ],
     "meaning_zh": "阿拉伯人",
     "game_enabled": false
@@ -14470,9 +14470,9 @@
     "kanji": "～署",
     "reading": "～しょ",
     "distractors": [
-      "～所",
-      "～書",
-      "～初"
+      "～しゅ",
+      "～しお",
+      "～しほ"
     ],
     "meaning_zh": "署",
     "game_enabled": true
@@ -14481,9 +14481,9 @@
     "kanji": "～症",
     "reading": "～しょう",
     "distractors": [
-      "～章",
-      "～省",
-      "～像"
+      "～じょう",
+      "～しゅう",
+      "～そ"
     ],
     "meaning_zh": "症",
     "game_enabled": true
@@ -14492,9 +14492,9 @@
     "kanji": "～証",
     "reading": "～しょう",
     "distractors": [
-      "～正",
-      "～章",
-      "～省"
+      "～しょうう",
+      "～しゅう",
+      "～しょうん"
     ],
     "meaning_zh": "證",
     "game_enabled": true
@@ -14503,9 +14503,9 @@
     "kanji": "～嬢",
     "reading": "～じょう",
     "distractors": [
-      "～女",
-      "～嬌",
-      "～玩"
+      "～じゅう",
+      "～しょう",
+      "～じょうう"
     ],
     "meaning_zh": "小姐",
     "game_enabled": true
@@ -21004,9 +21004,9 @@
     "kanji": "爆弾",
     "reading": "ばくだん",
     "distractors": [
-      "ばくどん",
-      "ほくだん",
-      "invalid_fix_2"
+      "はくだん",
+      "ばくたん",
+      "ばくだむ"
     ],
     "meaning_zh": "炸彈",
     "game_enabled": true
@@ -21851,9 +21851,9 @@
     "kanji": "洒落る",
     "reading": "しゃれる",
     "distractors": [
-      "ちゃれる",
-      "しやれる",
-      "invalid_fix_2"
+      "さらける",
+      "しゃれろ",
+      "しゅれる"
     ],
     "meaning_zh": "打扮",
     "game_enabled": true
@@ -26295,9 +26295,9 @@
     "kanji": "無論",
     "reading": "むろん",
     "distractors": [
-      "ぶろん",
-      "むろんと",
-      "invalid_fix_2"
+      "もろん",
+      "むもん",
+      "むろんぴ"
     ],
     "meaning_zh": "無論",
     "game_enabled": true
@@ -29681,9 +29681,9 @@
     "kanji": "ひび (かべの～)",
     "reading": "ひび (かべの～)",
     "distractors": [
-      "ひびき (響き)",
-      "ひみつ",
-      "ひびん"
+      "ひびき",
+      "ひみ",
+      "ひぴ"
     ],
     "meaning_zh": "裂痕",
     "game_enabled": false
