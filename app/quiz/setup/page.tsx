@@ -13,9 +13,9 @@ import { cn } from "@/lib/utils";
 export default function QuizSetupPage() {
     const router = useRouter();
     const { startQuiz, setCounts } = useQuizStore();
-    const [n1, setN1] = useState(5);
-    const [n2, setN2] = useState(10);
-    const [n3, setN3] = useState(5);
+    const [n1, setN1] = useState(0);
+    const [n2, setN2] = useState(20);
+    const [n3, setN3] = useState(0);
     const [warning, setWarning] = useState(false);
     const [showCustomModal, setShowCustomModal] = useState(false);
 
